@@ -1,0 +1,18 @@
+<div *ngIf="user">
+    <form (ngSubmit)="create()">
+        <label>
+            First name
+            <input type="text" [(ngModel)]="user.firstName">
+        </label>
+        <label>
+            Last name
+            <input type="text" [(ngModel)]="user.lastName">
+        </label>
+        <label>
+            e-mail
+            <input type="email" [(ngModel)]="user.email">
+        </label>
+        <button type="submit" class="button">create</button>
+        <button type="button" class="button alert" [routerLink]="['Users']">cancel</button>
+    </form>
+</div>

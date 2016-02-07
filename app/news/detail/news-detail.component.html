@@ -1,0 +1,52 @@
+<div class="container" style="position: relative;">
+    <div class="row">
+        <form class="form-horizontal" role="form" (ngSubmit)="save()">
+            <div class="form-group">
+                <label for="title">
+                    Title
+                </label>
+                <input type="text" [(ngModel)]="news.title" class="form-control" id="title">
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="author">
+                        Author
+                    </label>
+                    <select name="" id="author" [(ngModel)]="news.author" class="form-control">
+                        <option *ngFor="#user of users" [value]="user.id">{{user.firstName}} {{user.lastName}}</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="publication_date">
+                        Publication date
+                    </label>
+                    <input type="text" class="form-control" [(datePicker)]="news.date" id="publication_date" (blur)="change()">
+                </div>
+                <div class="col-md-4">
+                    <label for="published">
+                        Published
+                    </label>
+                    <input type="checkbox" [(ngModel)]="news.published" class="form-control" id="published">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="short">
+                    Short
+                </label>
+                <textarea [(ngModel)]="news.short" class="form-control" id="short" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="full">
+                    Full
+                </label>
+                <textarea [(ngModel)]="news.full" class="form-control" id="full" rows="5"></textarea>
+            </div>
+            <div class="row">
+                <button class="btn btn-success" type="submit">Save</button>
+                <button class="btn btn-danger" type="button" (click)="cancel()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

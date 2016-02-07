@@ -1,0 +1,54 @@
+<html>
+<head>
+    <base href="/">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Angular 2 QuickStart</title>
+    <!-- 1. Load libraries -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/vex-js/js/vex.combined.min.js"></script>
+
+    <script>vex.defaultOptions.className = 'vex-theme-os';</script>
+    <!--<script src="node_modules/foundation-sites/dist/foundation.js"></script>-->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="node_modules/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+            map: {
+                app: '/dist/app/'
+            },
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/boot')
+                .then(null, console.error.bind(console));
+    </script>
+    <!--<link rel="stylesheet" href="node_modules/foundation-sites/dist/foundation.min.css">-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="node_modules/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="node_modules/dropzone/dist/min/dropzone.min.css">
+    <link rel="stylesheet" href="node_modules/dropzone/dist/min/basic.min.css">
+    <link rel="stylesheet" href="node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <!--<link rel="stylesheet" href="node_modules/vex-js/css/vex-theme-os.css">-->
+    <!--<link rel="stylesheet" href="node_modules/vex-js/css/vex.css">-->
+    <!--<link rel="stylesheet" href="node_modules/vex-js/css/vex-theme-os.css">-->
+</head>
+<!-- 3. Display the application -->
+<body>
+<my-app>Loading...</my-app>
+</body>
+</html>

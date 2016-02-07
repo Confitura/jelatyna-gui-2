@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Michałek",
+      "lastName": "Margiel",
+      "email": "michal.margiel@gmail.com",
+      "roles": [
+        "ADMIN",
+        "SPEAKER"
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Ewa",
+      "lastName": "Margiel",
+      "email": "maja.margiel@gmail.com",
+      "roles": [
+        "ADMIN",
+        "SPEAKER"
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Maja",
+      "lastName": "Margiel",
+      "email": "ewa.margiel@gmail.com",
+      "roles": [
+        "ADMIN",
+        "SPEAKER"
+      ]
+    },
+    {
+      "firstName": "asda",
+      "lastName": "asda",
+      "email": "dsd@ada",
+      "id": 4,
+      "bio": "sdadsasdad"
+    },
+    {
+      "firstName": "asdasd",
+      "lastName": "asdasdad",
+      "email": "a@a.pl",
+      "id": 5
+    }
+  ]
+}

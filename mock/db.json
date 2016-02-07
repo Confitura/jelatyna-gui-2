@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Michałek",
+      "lastName": "Margiel",
+      "email": "michal.margiel@gmail.com",
+      "roles": [
+        "ADMIN",
+        "SPEAKER"
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Ewa",
+      "lastName": "Margiel",
+      "email": "maja.margiel@gmail.com",
+      "roles": [
+        "ADMIN",
+        "SPEAKER"
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Maja",
+      "lastName": "Margiel",
+      "email": "ewa.margiel@gmail.com",
+      "roles": [
+        "ADMIN",
+        "SPEAKER"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "News 1",
+      "author": 2,
+      "published": true,
+      "short": "sdjnlakseda",
+      "full": "sdsfsd",
+      "date": "2016-03-02 21:55"
+    },
+    {
+      "title": "sdrfdsf",
+      "author": 1,
+      "published": true,
+      "short": "dfgdfg",
+      "full": "dfgdg",
+      "id": 2
+    },
+    {
+      "title": "ansekflew",
+      "author": 1,
+      "published": true,
+      "short": "sds",
+      "full": "sdsf",
+      "id": 3
+    }
+  ]
+}

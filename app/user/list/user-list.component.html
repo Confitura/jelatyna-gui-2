@@ -1,0 +1,26 @@
+<button [routerLink]="['NewUser']" class="button" type="button">New</button>
+<table class="hover" style="width: 100%">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>Imię</th>
+        <th>Nazwisko</th>
+        <th>email</th>
+        <th>Role</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="#item of users">
+        <td>{{item.id}}</td>
+        <td>{{item.firstName}}</td>
+        <td>{{item.lastName}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.roles}}</td>
+        <td>
+            <a [routerLink]="['UserDetail', {'id': item.id }]" class="button">edit</a>
+            <button type="button" (click)="delete(item)" class="alert button">delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>

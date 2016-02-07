@@ -1,0 +1,67 @@
+<div *ngIf="user">
+    <div class="row columns"><h2>Edit user</h2></div>
+    <form (ngSubmit)="save()">
+        <div class="row">
+            <dropzone></dropzone>
+            <div class="medium-4 columns">
+                <label>
+                    First name
+                    <input type="text" [(ngModel)]="user.firstName">
+                </label>
+            </div>
+            <div class="medium-4 columns">
+
+                <label>
+                    Last name
+                    <input type="text" [(ngModel)]="user.lastName">
+                </label>
+            </div>
+            <div class="medium-4 columns">
+
+                <label>
+                    e-mail
+                    <input type="email" [(ngModel)]="user.email">
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="medium-4 columns">
+                <label>
+                    Web page
+                    <input type="text" [(ngModel)]="user.webpage">
+                </label>
+            </div>
+            <div class="medium-4 columns">
+
+                <label>
+                    Twitter
+                    <input type="text" [(ngModel)]="user.twitter">
+                </label>
+            </div>
+            <div class="medium-4 columns">
+
+                <label>
+                    Github
+                    <input type="email" [(ngModel)]="user.github">
+                </label>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="medium-12 columns">
+                <label>
+                    bio
+                    <textarea type="text" [(ngModel)]="user.bio" rows="5"></textarea>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-12 columns">
+
+                <button type="submit" class="button">save</button>
+                <button type="button" class="button alert" [routerLink]="['Users']">cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
